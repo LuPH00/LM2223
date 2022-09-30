@@ -5,3 +5,4 @@ Bienvenidos al repositorio de **Luis**. Aquí estarán todos los ejercicios del 
 - Ejercicios de HTML
 - Ejercicios de CSS
 - Ejercicios de JS
+- Ejercicios de JQuery
