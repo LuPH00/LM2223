@@ -1,0 +1,15 @@
+.encabezados{
+    text-align: center;
+    color: blue;
+    font-size: 200%;
+}
+.parrafos {
+    margin-left: 20px;
+    text-align: left;
+    color: yellow;
+}
+body {
+    background-color: green (80, 255, 80);
+    background: linear-gradient(#0eff1e,#0eff1e);
+    background-repeat: repeat;
+  }
