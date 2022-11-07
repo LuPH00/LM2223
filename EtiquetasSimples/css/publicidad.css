@@ -1,0 +1,50 @@
+#caja{
+    width: 100%;
+    height: 10%;
+    margin: 0 auto; /*centrar el div*/
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background-color: rgba(217, 217, 217, 255);
+    display: flex;
+    justify-content: center;
+}
+.cajas1{
+    background-color: rgb(147, 147, 255);
+    display: flex;
+    margin: 1%;
+    border: 2px solid black;
+    padding: 2%;
+}
+.cajas2{
+    background-color: rgb(216, 168, 255);
+    display: flex;
+    margin: 1%;
+    border: 2px solid black;
+    padding: 2%;
+}
+.cajas3{
+    background-color: rgb(255, 168, 194);
+    display: flex;
+    margin: 1%;
+    border: 2px solid black;
+    padding: 2%;
+}
+.img {
+    margin-top: 1%;
+    margin: 1%;
+}
+.texto {
+    margin-top: 8%;
+}
+main {
+    margin-top: 10%;
+    column-count: 3;
+    column-gap: 3em;
+    column-rule: 1px solid #bbb;
+    column-width: 140px;
+}
+body{
+    background-image: linear-gradient(#c039ff , #FFFFFF);
+}
