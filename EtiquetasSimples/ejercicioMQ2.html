@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio MQ2</title>
+    <style>
+        body {
+        background-color:rgb(205, 255, 222);
+        }
+
+        #center {margin-left: 4px;}
+        
+        #caja {
+          float: none;
+          width: auto;
+        }
+        
+        #nomargen {
+          margin: 0;
+          padding: 0;
+        }
+
+        .item_menu {
+          padding: 4px;
+          text-align:center;
+          height: 60px;
+          list-style-type: none;
+          margin: 5px;
+          line-height:60px;
+          background: rgb(239, 157, 255);
+          border: 2px solid rgb(97, 8, 180);
+          vertical-align:center;
+        }
+        
+        @media screen and (min-width: 480px) {
+          #center {margin-right: 180px;}
+          #caja {width: 150px; float: right;}
+        }
+        @media print {
+            body {
+                background-color: rgb(190, 187, 151);
+            }
+            #caja {
+                display:none;
+            }
+        }
+
+        .over {overflow: auto;}
+        </style>
+        </head>
+        <body>
+        
+        <div class="over">
+          <div id="caja">
+            <ul id="nomargen">
+              <li class="item_menu">Ajuste</li>
+              <li class="item_menu">Ajuste</li>
+              <li class="item_menu">Ajuste</li>
+              <li class="item_menu">Ajuste</li>
+              <li class="item_menu">Ajuste</li>
+              <li class="item_menu">Ajuste</li>
+              <li class="item_menu">Ajuste</li>
+              <li class="item_menu">Ajuste</li>
+              <li class="item_menu">Ajuste</li>
+            </ul>
+          </div>
+          
+          <div id="center">
+            <h1>Texto de prueba</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus blandit aliquet. Phasellus gravida vehicula neque finibus porta. Vestibulum sagittis eros non tincidunt accumsan. Cras nibh magna, blandit sed tempor a, sollicitudin quis dui. Pellentesque tincidunt nibh nec nisl porta, vitae blandit lectus convallis. Fusce vel mollis dui. Quisque neque massa, hendrerit maximus pretium nec, tempus quis est. Nulla sit amet magna nisi. Integer faucibus dapibus dapibus. Vivamus scelerisque ligula vel felis ornare, non iaculis risus convallis. Curabitur cursus, nulla quis euismod semper, lacus dui condimentum mi, eget pharetra diam turpis malesuada lectus. Nulla justo dolor, aliquet vitae leo at, vulputate dictum eros.
+
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse eleifend pellentesque arcu in pretium. Aenean fermentum porttitor nibh, sit amet commodo elit vulputate id. Fusce congue sollicitudin libero ac pharetra. Nullam bibendum ut nisi quis venenatis. Aliquam ante purus, hendrerit in condimentum sit amet, bibendum et ante. Donec ultrices cursus laoreet. Integer dapibus a augue ac eleifend. Donec eu neque lobortis, semper mi varius, rutrum ante. Duis eu justo lorem. Aliquam auctor mi elit, sit amet dapibus purus auctor id. Sed ac luctus sem. Donec eleifend metus venenatis sodales tempor. Aliquam ut mi non felis ultricies auctor vitae id purus.</p>
+        
+          </div>
+        </div>
+        
+</body>
+</html>
