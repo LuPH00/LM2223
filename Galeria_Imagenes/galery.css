@@ -26,13 +26,13 @@
     vertical-align: middle;
   }
   @media (max-width: 800px) {
-    .column {
+    .columna {
       flex: 50%;
       max-width: 50%;
     }
   }
   @media (max-width: 600px) {
-    .column {
+    .columna {
       flex: 100%;
       max-width: 100%;
     }
