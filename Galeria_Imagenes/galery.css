@@ -6,22 +6,22 @@
     margin: 0;
     font-family: Arial;
   }
-  .header {
+  .cabez {
     background-image: url(images/banner.jpg);
     text-align: center;
     padding: 32px;
   }
-  .row {
+  .fila {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
   }
-  .column {
+  .columna {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
   }
-  .column img {
+  .columna img {
     margin-top: 8px;
     vertical-align: middle;
   }
