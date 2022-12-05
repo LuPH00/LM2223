@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/prueba_examen.css">
+</head>
+<body>
+    <h1>CREA TU PERSONAJE</h1>
+    <main>
+        <p>POR FAVOR RELLENA ESTE FORMULARIO</p>
+        <form action="/action_page.php" method="post"></form>
+            <div class="form">
+                <div class="div1">
+                    <div><label for="NAME">NOMBRE</label></div>
+                    <div><input type="NAME" id="NAME" name="NAME" placeholder="ESCRIBE EL NOMBRE DE TU PERSONAJE..."></div>
+                </div>
+                <div>
+                    <label for="power">¿TIENE PODERES ESPECIALES?</label>
+                    <input type="checkbox" id="power" name="poder" value="Poderes especiales">
+                </div>
+                <div>
+                    <label for="favcolor">COLOR FAVORITO</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#000000">
+                </div>
+                <div>
+                    <p>Descripción del mismo <textarea name="comentario"></textarea></p>
+                </div>
+                <div>
+                    <label for="email">Email de la Tribu</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="date">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="Fecha_Nacimiento">
+                </div>
+                <div>
+                    <label for="bando">Bando</label>
+                    <select id="bando" name="bando" class="form-control">
+                        <option value="Buenos">Buenos</option>
+                        <option value="Malvados">Malvados</option>
+                </div>
+                <div class="span2">
+                    <p>Historia del Personaje <textarea name="comentario" placeholder="Puntos debiles..."></textarea></p>
+                </div>
+                <div>
+                    <label for="image">Imagen</label>
+                    <input type="file" name="imagen">
+                </div>
+                <div>
+                    <input type="submit" value="Crear"/>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
