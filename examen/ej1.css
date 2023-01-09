@@ -1,0 +1,71 @@
+/*hooder cambio de color
+cambio de cursor enlace*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+#header{
+    width: 100vw;
+    height: 10%;
+    margin: 0 auto; /*centrar el div*/
+    padding: 20px;
+    position: relative;
+    top: 1px;
+    left: 0px;
+    background-color: #ffd100;
+    text-align: center;
+    font-size: small;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%
+}
+.cajas1{
+    flex: 1;
+    padding: 10px;
+    height: auto;
+    align-content: center;
+}
+.cajas2{
+    
+    flex: 3;
+    background-color: white;
+    padding: 10px;
+    height: 100vw;
+    width: 60vw;
+    
+}
+.cajas3{
+    flex: 1;
+    padding: 10px;
+    align-content: center;
+   
+}
+
+.texto {
+    margin-top: 8%;
+}
+main {
+    display: flex;
+    column-count: 3;
+    column-gap: -2vw;
+    column-rule: 0px;
+    width: 75vw;
+
+    
+}
+
+body {
+    
+        background-color: #970043;
+        
+}
+.link {text-decoration: none;
+    color: black;}
+
+.link2 {text-decoration: none;
+    color: #ffd100;}
+
+footer {
+    background-color: #ffd100;
+    text-align: center;
+    padding: 10px;
+    height: 10%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%
+}
