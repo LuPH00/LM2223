@@ -1,0 +1,49 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulos Mágicos</title>
+<style>
+
+</style>
+</head>
+<body>
+    <div id="cajas">
+        <div id="roja"></div>
+        <div id="verde"></div>
+        <div id="amarillo"></div>
+    </div>
+    <div id="botones">
+        <button onclick="ocultar('roja')">Ocultar</button>
+        <button onclick="ocultar('verde')">Ocultar</button>
+        <button onclick="ocultar('amarillo')">Ocultar</button>        
+    </div>
+    <div id="botones">
+        <button onclick="mostrar('roja','red')">Mostrar</button>
+        <button onclick="mostrar('verde','green')">Mostrar</button>
+        <button onclick="mostrar('amarillo','yellow')">Mostrar</button>        
+    </div>
+    <div id="botones">
+        <button onclick="cambiar('roja','red')">Cambiar</button>
+        <button onclick="cambiar('verde','green')">Cambiar</button>
+        <button onclick="cambiar('amarillo','yellow')">Cambiar</button>        
+    </div>
+    <script>
+        function ocultar(id){
+            document.getElementById(id).style.backgroundColor="transparent";
+        }
+        function mostrar(id,color){
+            document.getElementById(id).style.backgroundColor=color;
+        }
+        function cambiar(id,color){
+            if (document.getElementById(id).style.backgroundColor=="transparent"){
+                document.getElementById(id).style.backgroundColor=color;
+            }
+            else{
+                document.getElementById(id).style.backgroundColor="transparent"
+            }
+        }
+    </script>
+</body>
+</html>
