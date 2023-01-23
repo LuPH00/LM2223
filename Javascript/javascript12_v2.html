@@ -7,18 +7,17 @@
     <title>Javascript 12 ARRAYS</title>
 </head>
 <body>
-    <h1>Array v1</h1>
+    <h1>Array v2</h1>
     <p>En este ejemplo vamos a ver como trabajar con Arrays</p>
     <p id="texto"></p>
     <script>
         var numeros=[-100 , 6.4 , 5 , 8.7 , 100 ];
         document.getElementById("texto").innerHTML = numeros;
-        document.write(numeros[0]+"<br>");
-        document.write(numeros[1]+"<br>");
-        document.write(numeros[2]+"<br>");
-        document.write(numeros[3]+"<br>");
-        document.write(numeros[4]+"<br>");
-        document.write(numeros[5]+"<br>");
+        //Con estructura repetitiva
+        var y //El nombre de la variable puede ser cual sea, lo más normal es que sea "i" de "index"
+        for (y=numeros.length-1;y>=0;y--) //Tiene que tener 3 partes: Inicialización (y=0), Condición (y<5) e Incremento (y=y+1)
+        document.write(numeros[y]+"<br>");
+
     </script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 12 ARRAYS</title>
+</head>
+<body>
+    <h1>Array v3</h1>
+    <p>Adivina la palabra</p>
+    <p>He pensado una palabra de las siguientes:</p>
+    <p id="texto"></p>
+    <p>¿Cuál crees que es?</p>
+    <input type="text" name="palabra" id="palabra">
+    <button onclick="comprueba()">Adivina</button>
+    <script>
+        var palabra=["Casa", "queso", "ardilla", "champiñón", "bosque", "cielo", "mundo"]
+        document.getElementById("texto").innerHTML = palabra
+        var secreta = palabra[1];
+        function comprueba() {
+            if(document.getElementById("palabra").value==secreta)
+            {
+                alert("¡Enhorabuena has acertado")
+            }
+            else(document.getElementById("palabra").value!=secreta)
+            {
+                alert("Lo siento, intentalo de nuevo")
+            }
+        }
+    </script>
+</body>
+</html>
