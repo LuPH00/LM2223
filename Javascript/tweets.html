@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social</title>
+    <style>
+        .rectangulo{
+            width: 50%;
+            height: 60px;
+            border: 1px solid gray;
+            border-radius: 5px ;
+        }
+    </style>
+</head>
+<body>
+    <!--<button onclick="alert('¡¡¡HAS PINCHADO EN LA PAPELERA!!!')"><img width='32' src='images/2638315_bin_delete_dust_erace_garbage_icon.png'></button>-->
+    <label for="tweet"></label>
+    <input type="text" name="tweet" id="tweet" placeholder="Escribe tu post">
+    <button onclick="post()">Post</button>
+    <p>Pulsa el botón de la papelera para sustraer el Tweet</p>
+    <button onclick="ordenar()">Ordenar</button>
+    <script>
+        let mensajes=["Frase 1", "Frase 2", "Frase 3", "Frase 4", "Frase 5", "Frase 6", "Frase 7", "Frase 8", "Frase 9", "Frase 10"];
+        imprimePost();
+
+    function imprimePost(){
+        for (var i=0;i<=mensajes.length-1;i--){
+        document.write("<div class='rectangulo'>");
+        document.write("<img width='32' src='images/6214703_bird_logo_twitter_icon.png'>");
+        document.write(mensajes[i]);
+        document.write("<img width='32' onclick='alert(\"HAS PINCHADO EN LA PAPELERA\");' src='images/2638315_bin_delete_dust_erace_garbage_icon.png'>");
+        document.write("</div>");
+    }
+    }
+    </script>
+</body>
+</html>
