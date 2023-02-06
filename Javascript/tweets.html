@@ -21,10 +21,11 @@
     <button onclick="post()">Post</button>
     <p>Pulsa el botón de la papelera para sustraer el Tweet</p>
     <button onclick="ordenar()">Ordenar</button>
+    <p id="demo"></p>
     <script>
-        let mensajes=["Frase 1", "Frase 2", "Frase 3", "Frase 4", "Frase 5", "Frase 6", "Frase 7", "Frase 8", "Frase 9", "Frase 10"];
+        let mensajes=["Mi primer tweet", "LM es una clase interesante", "Me apetece una birra", "Hemos estado en Cibersotero de excursión","Este es mi último tweet"];
         imprimePost();
-
+        
     function imprimePost(){
         for (var i=0;i<=mensajes.length-1;i--){
         document.write("<div class='rectangulo'>");
@@ -32,6 +33,15 @@
         document.write(mensajes[i]);
         document.write("<img width='32' onclick='alert(\"HAS PINCHADO EN LA PAPELERA\");' src='images/2638315_bin_delete_dust_erace_garbage_icon.png'>");
         document.write("</div>");
+    }
+    function post(){
+        var mensajes = document.getElementById("post").value;
+        post.push(mensajes);
+        imprimePosts();
+    }
+    function imprimePosts(){
+        let longitud=posts.length;
+        
     }
     }
     </script>
