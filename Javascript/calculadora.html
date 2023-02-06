@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <br><br>
+    <button onclick="suma()">Suma</button>
+    <button onclick="resta()">Resta</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    <p id="solucion"></p>
+    <script>
+        var a;
+        var b;
+           function suma(){
+                let a= parseFloat(document.getElementById("num1").value);
+                let b= parseFloat(document.getElementById("num2").value);
+                let c= parseFloat(a+b);
+                document.getElementById("solucion").innerHTML = "";
+                document.getElementById("solucion").innerHTML = c;
+           }
+            function resta(){
+                let a= parseFloat(document.getElementById("num1").value);
+                let b= parseFloat(document.getElementById("num2").value);
+                let c= parseFloat(a-b);
+                document.getElementById("solucion").innerHTML = "";
+                document.getElementById("solucion").innerHTML = c;
+    }
+            function multiplicar(){
+                let a= parseFloat(document.getElementById("num1").value);
+                let b= parseFloat(document.getElementById("num2").value);
+                let c= parseFloat(a*b);
+                document.getElementById("solucion").innerHTML = "";
+                document.getElementById("solucion").innerHTML = c;
+    }
+            function dividir(){
+                let a= parseFloat(document.getElementById("num1").value);
+                let b= parseFloat(document.getElementById("num2").value);
+                let c= parseFloat(a/b);
+                document.getElementById("solucion").innerHTML = "";
+                document.getElementById("solucion").innerHTML = c;
+    }
+
+    </script>
+</body>
+</html>
