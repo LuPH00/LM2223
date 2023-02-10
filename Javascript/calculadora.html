@@ -17,35 +17,71 @@
     <button onclick="dividir()">Dividir</button>
     <p id="solucion"></p>
     <script>
-        
+
+            function validaEntrada(){
+                let valida=true
+                if (document.getElementById("num1").value =="" || document.getElementById("num2").value =="")
+                {
+                    valida = false;
+                }
+                return valida;
+            }   
            function suma(){
-                let a= parseFloat(document.getElementById("num1").value);
-                let b= parseFloat(document.getElementById("num2").value);
-                let c= parseFloat(a+b);
-                document.getElementById("solucion").innerHTML = "";
-                document.getElementById("solucion").innerHTML = c;
+                if (validaEntrada()){
+                    let a= parseFloat(document.getElementById("num1").value);
+                    let b= parseFloat(document.getElementById("num2").value);
+                    let c= parseFloat(a+b);
+                    document.getElementById("solucion").innerHTML = "";
+                    document.getElementById("solucion").innerHTML = c;
+                }
+                else{
+                    document.getElementById("solucion").innerHTML = "Debes escribir números en las cajas"
+                }
+                
            }
             function resta(){
-                let a= parseFloat(document.getElementById("num1").value);
-                let b= parseFloat(document.getElementById("num2").value);
-                let c= parseFloat(a-b);
-                document.getElementById("solucion").innerHTML = "";
-                document.getElementById("solucion").innerHTML = c;
+                if (validaEntrada()){
+                    let a= parseFloat(document.getElementById("num1").value);
+                    let b= parseFloat(document.getElementById("num2").value);
+                    let c= parseFloat(a-b);
+                    document.getElementById("solucion").innerHTML = "";
+                    document.getElementById("solucion").innerHTML = c;
+                }
+                else{
+                    document.getElementById("solucion").innerHTML = "Debes escribir números en las cajas"
+                }
     }
             function multiplicar(){
-                let a= parseFloat(document.getElementById("num1").value);
-                let b= parseFloat(document.getElementById("num2").value);
-                let c= parseFloat(a*b);
-                document.getElementById("solucion").innerHTML = "";
-                document.getElementById("solucion").innerHTML = c;
+                if (validaEntrada()){
+                    let a= parseFloat(document.getElementById("num1").value);
+                    let b= parseFloat(document.getElementById("num2").value);
+                    let c= parseFloat(a*b);
+                    document.getElementById("solucion").innerHTML = "";
+                    document.getElementById("solucion").innerHTML = c;
+                }
+                else{
+                    document.getElementById("solucion").innerHTML = "Debes escribir números en las cajas"
+                }
     }
             function dividir(){
-                let a= parseFloat(document.getElementById("num1").value);
-                let b= parseFloat(document.getElementById("num2").value);
-                let c= parseFloat(a/b);
-                document.getElementById("solucion").innerHTML = "";
-                document.getElementById("solucion").innerHTML = c;
+                if (validaEntrada()){
+                    if (document.getElementById("num2").value!="0"){
+                        let a= parseFloat(document.getElementById("num1").value);
+                        let b= parseFloat(document.getElementById("num2").value);
+                        let c= parseFloat(a/b);
+                        document.getElementById("solucion").innerHTML = "";
+                        document.getElementById("solucion").innerHTML = c;
+                    }
+                    else{
+                    document.getElementById("solucion").innerHTML = "Indeterminación"
+                    }
+                }
+                else{
+                    document.getElementById("solucion").innerHTML = "Debes escribir números en las cajas"
+                }
     }
+
+        
 
     </script>
 </body>

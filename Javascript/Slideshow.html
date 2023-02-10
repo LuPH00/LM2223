@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+</head>
+<body>
+    <table>
+        <h1>IES Isbilya</h1>
+     <tr>
+       <td width="100%"><img src="images/s0.jpg" id="foto0"></td>
+       <td width="100%"><img src="images/s1.jpg" id="foto1"></td>
+       <td width="100%"><img src="images/s2.jpg" id="foto2"></td>
+       <td width="100%"><img src="images/s3.jpg" id="foto3"></td>
+       <td width="100%"><img src="images/s4.jpg" id="foto4"></td>
+     </tr>
+     <tr>
+       <td width="100%">
+       <form>
+         <div>
+             
+             <input type="button" value="Atrás" onClick="atras()">
+             <input type="button" value="Siguiente" onClick="siguiente()">
+             <br>
+         
+           </div>
+       </form>
+       </td>
+     </tr>
+   </table> 
+   <p id="Posición"></p> 
+   <script>
+    var y = 0;
+    function siguiente() {
+        y = y+1;
+        if (y>5) {y=1};
+        document.getElementById("Posición").innerHTML=y;
+        if (y==1) {
+            document.getElementById("foto1").style.display="none";
+            document.getElementById("foto2").style.display="none";
+            document.getElementById("foto3").style.display="none";
+            document.getElementById("foto4").style.display="none";
+            document.getElementById("foto0").style.display="block";
+        }
+        else {
+            if (y==2) {
+                document.getElementById("foto0").style.display="none";
+                document.getElementById("foto2").style.display="none";
+                document.getElementById("foto3").style.display="none";
+                document.getElementById("foto4").style.display="none";
+                document.getElementById("foto1").style.display="block";
+        }   
+            else {
+                if (y==3) {
+                    document.getElementById("foto1").style.display="none";
+                    document.getElementById("foto0").style.display="none";
+                    document.getElementById("foto3").style.display="none";
+                    document.getElementById("foto4").style.display="none";
+                    document.getElementById("foto2").style.display="block";
+                }   
+                else 
+                    if (y==4) {
+                        document.getElementById("foto1").style.display="none";
+                        document.getElementById("foto2").style.display="none";
+                        document.getElementById("foto0").style.display="none";
+                        document.getElementById("foto4").style.display="none";
+                        document.getElementById("foto3").style.display="block";
+        }
+                    else {
+                        if (y==5) {
+                            document.getElementById("foto1").style.display="none";
+                            document.getElementById("foto2").style.display="none";
+                            document.getElementById("foto3").style.display="none";
+                            document.getElementById("foto0").style.display="none";
+                            document.getElementById("foto4").style.display="block";
+                        };
+                };
+            };
+        };
+    };
+    function atras() {
+        y = y-1;
+        if (y<1) {y=5};
+        document.getElementById("Posición").innerHTML=y;
+        if (y==1) {
+            document.getElementById("foto1").style.display="none";
+            document.getElementById("foto2").style.display="none";
+            document.getElementById("foto3").style.display="none";
+            document.getElementById("foto4").style.display="none";
+            document.getElementById("foto0").style.display="block";
+        }
+        else {
+            if (y==2) {
+                document.getElementById("foto0").style.display="none";
+                document.getElementById("foto2").style.display="none";
+                document.getElementById("foto3").style.display="none";
+                document.getElementById("foto4").style.display="none";
+                document.getElementById("foto1").style.display="block";
+        }   
+            else {
+                if (y==3) {
+                    document.getElementById("foto1").style.display="none";
+                    document.getElementById("foto0").style.display="none";
+                    document.getElementById("foto3").style.display="none";
+                    document.getElementById("foto4").style.display="none";
+                    document.getElementById("foto2").style.display="block";
+                }   
+                else 
+                    if (y==4) {
+                        document.getElementById("foto1").style.display="none";
+                        document.getElementById("foto2").style.display="none";
+                        document.getElementById("foto0").style.display="none";
+                        document.getElementById("foto4").style.display="none";
+                        document.getElementById("foto3").style.display="block";
+        }
+                    else {
+                        if (y==5) {
+                            document.getElementById("foto1").style.display="none";
+                            document.getElementById("foto2").style.display="none";
+                            document.getElementById("foto3").style.display="none";
+                            document.getElementById("foto0").style.display="none";
+                            document.getElementById("foto4").style.display="block";
+                        };
+                };
+            };
+        };
+    };
+
+
+</script>
+
+                
+                
+</body>
+</html>
