@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <h1>Calculadora de Índice de Masa Corporal</h1>
+
+    <label for="peso">Peso en KG: </label>
+    <input type="text" name="peso" id="peso" placeholder="72">
+    <label for="altura">Altura en M: </label>
+    <input type="text" name="altura" id="altura" placeholder="ej: 1.68">
+    <button onclick="comprueba()">Calcula tu IMC</button>
+    <p id="demo"></p>
+
+    <script>
+        function comprueba(){
+                    let a= parseFloat(document.getElementById("peso").value);
+                    let b= parseFloat(document.getElementById("altura").value);
+                    let c= parseFloat(a/(b*b));
+                    document.getElementById("demo").innerHTML = "";
+                    document.getElementById("demo").innerHTML = c;
+                
+            }
+    </script>
+    
+</body>
+</html>
